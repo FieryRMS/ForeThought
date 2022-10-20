@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://elements/BasePlayerEntity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/PlayerAnimationHandler.gd" type="Script" id=2]
+[ext_resource path="res://scripts/PlayerEntity.gd" type="Script" id=3]
+
+[node name="PlayerEntity" instance=ExtResource( 1 )]
+collision_mask = 32
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": "Player Enitiy with controls"
+}
+
+[node name="AnimationPlayer" parent="." index="1"]
+script = ExtResource( 2 )
