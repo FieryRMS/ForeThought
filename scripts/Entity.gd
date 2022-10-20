@@ -10,7 +10,6 @@ var Velocity := Vector2.ZERO
 
 func _ready():
 	add_to_group("Entity")
-	pass
 
 
 func _process(delta):
@@ -26,4 +25,3 @@ func _process(delta):
 		Velocity.y *= -1
 	if is_on_wall():
 		Velocity.x = 0
-	pass

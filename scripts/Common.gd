@@ -33,4 +33,3 @@ static func CalcFinalVelAfterPlayerMov(Vel: Vector2, PlayerVel: Vector2) -> Vect
 	else:
 		FinalVel.y = Vel.y + PlayerVel.y
 	return FinalVel
-	pass
