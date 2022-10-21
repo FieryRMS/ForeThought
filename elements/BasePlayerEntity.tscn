@@ -376,11 +376,14 @@ tracks/3/keys = {
 }
 
 [node name="BasePlayerEntity" type="KinematicBody2D"]
+collision_layer = 0
+collision_mask = 0
 __meta__ = {
 "_editor_description_": "This is the base entity for the player and ghost entities."
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 1.5, -25.5 )
 shape = SubResource( 1 )
 

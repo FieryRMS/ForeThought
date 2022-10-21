@@ -25,6 +25,9 @@ extents = Vector2( 26, 1.5 )
 
 [node name="Button" type="Node2D"]
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/ButtonPress = SubResource( 1 )
@@ -43,14 +46,16 @@ region_enabled = true
 region_rect = Rect2( 0, 128, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
 collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( -69, -6 )
-polygon = PoolVector2Array( 37, 6, 44, -2, 94, -2, 101, 6 )
+polygon = PoolVector2Array( 36, 6, 44, -2, 94, -2, 102, 6 )
 
 [node name="Area2D" type="Area2D" parent="."]
+visible = false
 collision_layer = 8
 collision_mask = 7
 

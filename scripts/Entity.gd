@@ -2,7 +2,7 @@ extends KinematicBody2D
 class_name Entity
 
 export var Gravity := 200
-export var MovementSpeed := 10
+export var MovementSpeed := 100
 export var JumpStrength := 100
 export var Friction := 0.7
 var Velocity := Vector2.ZERO

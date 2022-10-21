@@ -294,6 +294,7 @@ region_enabled = true
 region_rect = Rect2( 320, 192, 64, 64 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
 collision_layer = 32
 collision_mask = 0
 

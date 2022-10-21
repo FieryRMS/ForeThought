@@ -5,7 +5,8 @@
 [ext_resource path="res://scripts/PlayerEntity.gd" type="Script" id=3]
 
 [node name="PlayerEntity" instance=ExtResource( 1 )]
-collision_mask = 32
+collision_layer = 1
+collision_mask = 44
 script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": "Player Enitiy with controls"
